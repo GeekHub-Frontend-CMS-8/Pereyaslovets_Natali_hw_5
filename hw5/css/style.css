@@ -82,6 +82,22 @@ textarea {
 	box-sizing: border-box;
 }
 
+textarea::-webkit-input-placeholder {
+font-size: 15px;
+}
+
+textarea:-moz-placeholder { / Firefox 18- /
+font-size: 15px;
+}
+
+textarea::-moz-placeholder {  / Firefox 19+ /
+font-size: 15px;
+}
+
+textarea:-ms-input-placeholder {
+font-size: 15px; 
+}
+
 footer ul li {
 	display: inline-block;
 }
@@ -117,7 +133,6 @@ p {
 .h-wrapper img:hover {
 	transform: rotate(360deg);
 }
-
 
 .hero {
   background-image: url(../img/header-logo.png);
@@ -329,4 +344,8 @@ p {
   border-color: #999999;
 	color: #999999;
 	transition: all .5s;
+}
+
+.fa-chevron-down {
+	color: #fff;
 }
